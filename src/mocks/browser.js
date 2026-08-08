@@ -14,7 +14,7 @@ export const worker = setupWorker(
 )
 
 export async function enableMocking() {
-  if (import.meta.env.PROD) return
+ // if (import.meta.env.PROD) return
 
   return worker.start({
     onUnhandledRequest: 'bypass',
